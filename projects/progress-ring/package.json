@@ -1,5 +1,5 @@
 {
-  "name": "progress-ring",
+  "name": "gtx-progress-ring",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^11.0.9",
@@ -7,5 +7,11 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "repository": {
+    "directory": "./projects/progress-ring",
+    "type": "git",
+    "url": "https://github.com/theguitxo/gtx-progress-ring"
+  },
+  "readme": "README.md"
 }

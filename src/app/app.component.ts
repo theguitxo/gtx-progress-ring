@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { dirOptions } from 'projects/progress-ring/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'progressRingDemo';
+
+  get rightDirection(): dirOptions {
+    return dirOptions.RIGHT;
+  }
+
+  get leftDirection(): dirOptions {
+    return dirOptions.LEFT;
+  }
+  // examples: Array<progressRingOptions> = [
+  //   {
+  //     size: 180,
+  //     strokeWidth: 10,
+  //     backColor: 'gray',
+  //     frontColor: 'cyan',
+  //     percent: 33,
+  //     direction: dirOptions.RIGHT,
+  //     useAnimation: true,
+  //   },
+  //   {
+  //     strokeWidth: 5,
+  //     percent: 65,
+  //     showPercentText: true,
+  //   }
+  // ];
 }

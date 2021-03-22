@@ -1,27 +1,41 @@
 # ProgressRingDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+![Example image](./example.png)
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This component shows a ring with two circles, one is filled with a percent defined as a parameter.
 
-## Code scaffolding
+Parameters:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **size**: The diameter of the ring
+* **strokeWidth**: Width of the stroke for the circles of the ring. This value is part of the size of the ring. E.g., in a component with a size of 100 and a stroke width of 5, the outer diameter of the ring is 100 and the inner diameter is 90 (100 - (5 * 2))
+* **backColor**: Color for the circle as the background of the ring
+* **frontColor**: Color for the circle that shows the percentage value of the ring
+* **percent**: Percentage to show in the ring
+* **direction**: Direction that the circle of percentage must to grow. This value can be *right* or *left*. If it's *right*, the circle will be grown in the same way of the clock needles, otherwise, if the value is *left*, the circle will be growns it the opposite way
+* **showPercentText**: To show or not, into the inner circle, a text with the percentage that is shown in the ring
+* **useAnimation**: To animate the stroke from 0 to the value as received as a parameter when the component is inserted or when the percentage is changed
 
-## Build
+## Test the component
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clon this repository and, into the folder of the project, run `ng serve` for start the dev server and modify the file *app.component.html*. Navigate to `http://localhost:4200/` to see the result with the new values.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Este componente muestra un anillo con dos circulos, uno se rellena con un porcentaje recibido como parámetro.
 
-## Running end-to-end tests
+Parámetros:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* **size**: El diámetro de anillo
+* **strokeWidth**: Ancho de las líneas para los circulos del anillo. Este valor es parte del tamaño del anillo. P. ej., en un componente con una tamaño de 100 y un ancho de línea de 5, el diámetro exterior es de 100 y el diámetro interior es de 90 (100 - (5 * 2))
+* **backColor**: Color del círculo usado como fondo el anillo
+* **frontColor**: Color del cículo que muestra el valor de porcentaje del anillo
+* **percent**: Porcentaje a mostrar en el anillo
+* **direction**: Dirección que tomará el cículo que muestra el porcentaje. Este valor puede ser *right* o *left*. Si es *right*, el cículo crecera en el sentido de las agujas del reloj, por el contrario, si el valor es *left*, el cículo crecera en el sentido contrario
+* **showPercentText**: Para mostrar o no, dentro del círculo interior, un texto con el porcentaje que muestra el anillo
+* **useAnimation**: Para animar el trazjo de 0 hasta el valor recibibo como parñametro cuando se inerta el componente o cuando el porcentaje cambia
 
-## Further help
+## Probar el componente
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Clone este repositorio y, dentro del directorio del proyecto, ejecute `ng serve` para iniciar el servidor de desarrollo y modifique el *fichero app.component.html*. Navegue a `http://localhost:4200/` para ver el resultado con los nuevos valores.

@@ -1,0 +1,59 @@
+.component-info__wrapper {
+  text-align: justify;
+  padding: 0 1em 2em 1em;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+
+  p {
+    padding: 0;
+    margin: 0 0 .5em 0;
+  }
+
+  ul {
+    padding: .5em 0;
+    margin: 0;
+
+    li {
+      margin: 0 0 .5em 1em;
+      padding: 0;
+      list-style: none;
+
+      .name {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.rings__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .rings__item {
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rings__parameters {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1em;
+    border-top: solid 1px #000;
+
+    h3, table {
+      font-size: 1em;
+    }
+
+    table {
+      th {
+        text-align: right;
+        &::after {
+          content: ':';
+        }
+      }
+    }
+
+  }
+
+}

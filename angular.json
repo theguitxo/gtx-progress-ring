@@ -122,6 +122,46 @@
           }
         }
       }
+    },
+    "progress-ring": {
+      "projectType": "library",
+      "root": "projects/progress-ring",
+      "sourceRoot": "projects/progress-ring/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/progress-ring/tsconfig.lib.json",
+            "project": "projects/progress-ring/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/progress-ring/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/progress-ring/src/test.ts",
+            "tsConfig": "projects/progress-ring/tsconfig.spec.json",
+            "karmaConfig": "projects/progress-ring/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/progress-ring/tsconfig.lib.json",
+              "projects/progress-ring/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "progressRingDemo"

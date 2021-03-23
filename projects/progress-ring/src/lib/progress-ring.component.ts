@@ -1,7 +1,5 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
-// https://dev.to/vaibhavkhulbe/let-s-make-and-wear-those-css-3-progress-rings-2ngf
-
 function isValidColor(color: string): boolean {
   const element: HTMLElement = document.createElement('div');
   element.style.fill = color;

@@ -1,7 +1,9 @@
-# ProgressRingDemo
+# Progress Ring
 
 ![Example image](./example.png)
 
+---
+## English
 ---
 
 This component shows a ring with two circles, one is filled with a percent defined as a parameter.
@@ -17,10 +19,52 @@ Parameters:
 * **showPercentText**: To show or not, into the inner circle, a text with the percentage that is shown in the ring
 * **useAnimation**: To animate the stroke from 0 to the value as received as a parameter when the component is inserted or when the percentage is changed
 
+---
+
 ## Test the component
 
 Clon this repository and, into the folder of the project, run `ng serve` for start the dev server and modify the file *app.component.html*. Navigate to `http://localhost:4200/` to see the result with the new values.
 
+---
+  
+## NPM Package
+
+This component is released as an NPM package. His url is:
+
+[https://www.npmjs.com/package/gtx-progress-ring](https://www.npmjs.com/package/gtx-progress-ring)
+
+You must install with the command:
+
+`npm install gtx-progress-ring`
+
+And add it to the imported modules of the app where you want use:
+
+**app.module.ts:**
+```
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    ProgressRingModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+**app.component.html:**
+
+```
+<gtx-progress-ring
+  [percent]="33"
+  [showPercentText]="true"
+  [useAnimation]="true">
+</gtx-progress-ring>
+```
+---
+## Español
 ---
 
 Este componente muestra un anillo con dos circulos, uno se rellena con un porcentaje recibido como parámetro.
@@ -36,6 +80,47 @@ Parámetros:
 * **showPercentText**: Para mostrar o no, dentro del círculo interior, un texto con el porcentaje que muestra el anillo
 * **useAnimation**: Para animar el trazjo de 0 hasta el valor recibibo como parñametro cuando se inerta el componente o cuando el porcentaje cambia
 
+---
+
 ## Probar el componente
 
 Clone este repositorio y, dentro del directorio del proyecto, ejecute `ng serve` para iniciar el servidor de desarrollo y modifique el *fichero app.component.html*. Navegue a `http://localhost:4200/` para ver el resultado con los nuevos valores.
+
+---
+
+## Paquete NPM
+
+Este componente está publicado como paquete NPM. Su url es:
+
+[https://www.npmjs.com/package/gtx-progress-ring](https://www.npmjs.com/package/gtx-progress-ring)
+
+Instale el componente mediante el siguiente comando:
+
+`npm install gtx-progress-ring`
+
+Y añadalo a los módulos importados de la aplicación donde quiera usarlo:
+
+**app.module.ts:**
+```
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    ProgressRingModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+**app.component.html:**
+
+```
+<gtx-progress-ring
+  [percent]="33"
+  [showPercentText]="true"
+  [useAnimation]="true">
+</gtx-progress-ring>
+```
